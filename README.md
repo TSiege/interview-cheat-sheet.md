@@ -354,7 +354,7 @@ This algorithm never needed to compare all the differences to one another, savin
 - Best Case: `O(n)`
 
 #### Space Complexity
-- Worst Case: `O(1)`
+- Worst Case: `O(n)`
 
 #### Visualization
 ![#](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/400px-Merge_sort_algorithm_diagram.svg.png)
