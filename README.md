@@ -6,7 +6,7 @@ This list is meant to be both a quick guide and reference for further research i
 This is an open source, community project, and I am grateful for all the help I can get. If you find a mistake make a PR and please have a source so I can confirm the correction. If you have any suggestions feel free to open an issue.
 
 ## Challenges
-This project now has actual code challenges! This challenges are meant to cover the topics you'll read below. Maybe you'll see them in an interview and maybe you won't. Either way you'll probably learn something new. [Click here for more](./challenges/README.md)
+This project now has actual code challenges! Theese challenges are meant to cover the topics you'll read below. Maybe you'll see them in an interview and maybe you won't. Either way you'll probably learn something new. [Click here for more](./challenges/README.md)
 
 # Table of Content
 - [Asymptotic Notation](#asymptotic-notation)
@@ -52,7 +52,7 @@ Visualized below; the x-axis representing input size and the y-axis representing
 [(source: Wikipedia, _Computational Complexity of Mathematical Operations_)](https://en.wikipedia.org/wiki/Computational_complexity_of_mathematical_operations)
 
 #### Big-O notation
-Big-O refers to the upper bound of time or space complexity of an algorithm, meaning it worst case runtime scenario. An easy way to think of it is that runtime could be better than Big-O but it will never be worse.
+Big-O refers to the upper bound of time or space complexity of an algorithm, typically representing the worst-case runtime scenario. An easy way to think of it is that runtime could be better than Big-O but it will never be worse.
 #### Big-Ω (Big-Omega) notation
 Big-Omega refers to the lower bound of time or space complexity of an algorithm, meaning it is the best runtime scenario. Or runtime could worse than Big-Omega, but it will never be better.
 #### Big-θ (Big-Theta) notation
@@ -61,14 +61,14 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 #### What you need to know
 - Big-O and Big-Theta are the most common and helpful notations
 - Big-O does _not_ mean Worst Case Scenario, Big-Theta does _not_ mean average case, and Big-Omega does _not_ mean Best Case Scenario. They only connote the algorithm's performance for a particular scenario, and all three can be used for any scenario.
-- Worst Case means given an unideal input, Average Case means given a typical input, Best case means a ideal input. Ex. Worst case means given an input the algorithm performs particularly bad, or best case an already sorted array for a sorting algorithm.
+- Worst Case means given an unideal input, Average Case means given a typical input, Best case means an ideal input. Ex. Worst case means given an input the algorithm performs particularly bad, or best case an already sorted array for a sorting algorithm.
 - Best Case and Big Omega are generally not helpful since Best Cases are rare in the real world and lower bound might be very different than an upper bound.
 - Big-O isn't everything. On paper merge sort is faster than quick sort, but in practice quick sort is superior.
 
 # <a id="data-structures"></a>Data Structures
 ### <a id="array"></a> Array
 #### Definition
-- Stores data elements based on an sequential, most commonly 0 based, index.
+- Stores data elements based on a sequential, most commonly 0 based, index.
 - Based on [tuples](http://en.wikipedia.org/wiki/Tuple) from set theory.
 - They are one of the oldest, most commonly used data structures.
 
@@ -253,7 +253,7 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <a id="depth-first-search"></a>Depth First Search
 #### Definition
 - An algorithm that searches a tree (or graph) by searching depth of the tree first, starting at the root.
-  - It traverses left down a tree until it cannot go further.
+  - It traverses down the left side of a tree until it cannot go further.
   - Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.
   - When finished examining a branch it moves to the node right of the root then tries to go left on all it's children until it reaches the bottom.
   - The right most node is evaluated last (the node that is right of all it's ancestors).
@@ -322,7 +322,7 @@ This algorithm never needed to compare all the differences to one another, savin
 
 #### What you need to know
 - Inefficient for large data sets, but can be faster for than other algorithms for small ones.
-- Although it has an `O(n^2)` time complexity, in practice it is slightly less since its comparison scheme only requires checking place if it is smaller than its neighbor.
+- Although it has an `O(n^2)` time complexity, in practice it can perform better since its comparison scheme only requires checking place if it is smaller than its neighbor.
 
 #### Time Complexity
 - Best Case: `O(n)`
@@ -354,7 +354,7 @@ This algorithm never needed to compare all the differences to one another, savin
 - Best Case: `O(n)`
 
 #### Space Complexity
-- Worst Case: `O(1)`
+- Worst Case: `O(n)`
 
 #### Visualization
 ![#](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/400px-Merge_sort_algorithm_diagram.svg.png)
